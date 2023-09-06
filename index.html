@@ -1,0 +1,756 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.3">
+    
+    
+      
+        <title>letmego</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.0e669242.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="/css/termynal.css">
+    
+      <link rel="stylesheet" href="/css/custom.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config",""),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#let-me-go" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="." title="letmego" class="md-header__button md-logo" aria-label="letmego" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            letmego
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              首页
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="amber"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/mikigo/letmego" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mikigo/letmego
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="letmego" class="md-nav__button md-logo" aria-label="letmego" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    letmego
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/mikigo/letmego" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    mikigo/letmego
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    首页
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    首页
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    安装
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    使用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    技术方案讲解
+  </a>
+  
+    <nav class="md-nav" aria-label="技术方案讲解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    注册开机自启服务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    执行判断模块
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    执行记录文件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    用例步骤函数标签字符串编码算法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    用例执行状态的处理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    集成到自动化测试框架
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    其他容易忽视但很重要的事项
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    Demo
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    安装
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    使用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    技术方案讲解
+  </a>
+  
+    <nav class="md-nav" aria-label="技术方案讲解">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    注册开机自启服务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    执行判断模块
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    执行记录文件
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    用例步骤函数标签字符串编码算法
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    用例执行状态的处理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    集成到自动化测试框架
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    其他容易忽视但很重要的事项
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#demo" class="md-nav__link">
+    Demo
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="let-me-go">Let Me Go<a class="headerlink" href="#let-me-go" title="Permanent link">&para;</a></h1>
+<p>任我行（letmego）是一个控制 Python 函数执行的技术方案，目前主要应用场景是在自动化测试程序遇到不得不中断的场景下，如重启场景，需要实现自动化用例步骤执行过程中重启机器，机器重新启动之后，能再次继续紧接着重启前的用例步骤执行的功能。</p>
+<h2 id="_1">安装<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>从 PyPI 安装:</li>
+</ul>
+<div class="highlight"><pre><span></span><code>pip3 install letmego
+</code></pre></div>
+<h2 id="_2">使用<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>方法层：</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">letmego</span>
+
+<span class="c1"># 配置标签记录文件的路径，默认为：/tmp/_running_man.log</span>
+<span class="n">letmego</span><span class="o">.</span><span class="n">conf</span><span class="o">.</span><span class="n">setting</span><span class="o">.</span><span class="n">RUNNING_MAN_FILE</span> <span class="o">=</span> <span class="s2">&quot;./_running_man.log&quot;</span>
+<span class="c1"># 配置操作系统的密码</span>
+<span class="n">letmego</span><span class="o">.</span><span class="n">conf</span><span class="o">.</span><span class="n">setting</span><span class="o">.</span><span class="n">PASSWORD</span> <span class="o">=</span> <span class="s2">&quot;1&quot;</span>
+
+
+<span class="nd">@letmego</span><span class="o">.</span><span class="n">mark</span>
+<span class="k">class</span> <span class="nc">Page</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">click_some_element_self</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;点击某个元素（实例方法）&quot;&quot;&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;click self&quot;</span><span class="p">)</span>
+
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span> <span class="nf">click_some_element_cls</span><span class="p">(</span><span class="bp">cls</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;点击某个元素（类方法）&quot;&quot;&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;click cls&quot;</span><span class="p">)</span>
+
+    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">click_some_element_static</span><span class="p">():</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;点击某个元素（静态方法）&quot;&quot;&quot;</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;click static&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>使用方法非常简单，只需要在方法层类名加一个装饰器即可。</p>
+<p>在测试用例中调用方法：</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pytest</span>
+<span class="kn">from</span> <span class="nn">test.page</span> <span class="kn">import</span> <span class="n">Page</span>
+
+
+<span class="k">class</span> <span class="nc">TestDemo</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">test_001</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;test 001&quot;&quot;&quot;</span>
+
+        <span class="n">Page</span><span class="p">()</span><span class="o">.</span><span class="n">click_some_element_self</span><span class="p">()</span>
+        <span class="n">Page</span><span class="o">.</span><span class="n">click_some_element_cls</span><span class="p">()</span>
+        <span class="n">Page</span><span class="o">.</span><span class="n">click_some_element_static</span><span class="p">()</span>
+        <span class="c1"># 和 10 行相同的步骤</span>
+        <span class="n">Page</span><span class="p">()</span><span class="o">.</span><span class="n">click_some_element_self</span><span class="p">()</span>
+        <span class="c1"># 和 11 行相同的步骤</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">Page</span><span class="p">()</span>
+        <span class="n">p</span><span class="o">.</span><span class="n">click_some_element_cls</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">pytest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<p>测试用例首次执行，执行结果如下：</p>
+<p><img alt="img" src="img/3.png" /></p>
+<p>同时会生成标签文件：</p>
+<p><code>_running_man.log</code></p>
+<div class="highlight"><pre><span></span><code><span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">mikigo</span><span class="o">/</span><span class="n">github</span><span class="o">/</span><span class="n">letmego</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">test</span><span class="o">.</span><span class="n">py</span><span class="o">-</span><span class="n">TestDemo</span><span class="o">-</span><span class="n">test_001</span><span class="o">-</span><span class="n">Page</span><span class="o">-</span><span class="n">click_some_element_self</span><span class="o">-</span><span class="mi">10</span>
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">mikigo</span><span class="o">/</span><span class="n">github</span><span class="o">/</span><span class="n">letmego</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">test</span><span class="o">.</span><span class="n">py</span><span class="o">-</span><span class="n">TestDemo</span><span class="o">-</span><span class="n">test_001</span><span class="o">-</span><span class="n">Page</span><span class="o">-</span><span class="n">click_some_element_cls</span><span class="o">-</span><span class="mi">11</span>
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">mikigo</span><span class="o">/</span><span class="n">github</span><span class="o">/</span><span class="n">letmego</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">test</span><span class="o">.</span><span class="n">py</span><span class="o">-</span><span class="n">TestDemo</span><span class="o">-</span><span class="n">test_001</span><span class="o">-</span><span class="n">Page</span><span class="o">-</span><span class="n">click_some_element_static</span><span class="o">-</span><span class="mi">12</span>
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">mikigo</span><span class="o">/</span><span class="n">github</span><span class="o">/</span><span class="n">letmego</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">test</span><span class="o">.</span><span class="n">py</span><span class="o">-</span><span class="n">TestDemo</span><span class="o">-</span><span class="n">test_001</span><span class="o">-</span><span class="n">Page</span><span class="o">-</span><span class="n">click_some_element_self</span><span class="o">-</span><span class="mi">14</span>
+<span class="o">/</span><span class="n">home</span><span class="o">/</span><span class="n">mikigo</span><span class="o">/</span><span class="n">github</span><span class="o">/</span><span class="n">letmego</span><span class="o">/</span><span class="n">test</span><span class="o">/</span><span class="n">test</span><span class="o">.</span><span class="n">py</span><span class="o">-</span><span class="n">TestDemo</span><span class="o">-</span><span class="n">test_001</span><span class="o">-</span><span class="n">Page</span><span class="o">-</span><span class="n">click_some_element_cls</span><span class="o">-</span><span class="mi">17</span>
+</code></pre></div>
+<p>再次执行用例，测试用例实际没有执行任何东西：</p>
+<p><img alt="img" src="img/4.png" /></p>
+<h2 id="_3">技术方案讲解<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>本技术方案通过对自动化测试代码中执行到的函数进行动态添加执行标签，在每次会话过程中，只要执行到的用例步骤都会通过标签的形式记录此函数的执行状态，而标签字符串是通过一套组合算法对函数进行标记，从而确保每个函数标签全局唯一性。</p>
+<p>以重启场景为例，整体运行逻辑如下：</p>
+<p>首先，将自动化测试程序注册到操作系统开机自启服务中，这样只要操作系统开机，自动化测试程序就会自动执行起来。</p>
+<p>然后，在一次自动化测试用例执行时，每个用例步骤为一个函数，用例步骤执行时通过标签记录此步骤已经被执行了，记录到执行记录文件里面，如果某个用例步骤涉及重启的操作，虽然当前自动化程序会中断，但是执行记录文件里面已经记录了重启之前执行到哪个步骤了。</p>
+<p>最后，等重新启动之后，执行判断模块会读取执行记录文件里面的标签信息，如果自动化用例步骤所对应的函数已经存在执行记录文件中，说明这个用例步骤在重启之前已经执行过了，则直接跳过执行，继续判断下一个步骤，直到判断到某个用例步骤的标签不存在执行记录文件中，说明此用例步骤就是重启后应该紧接着执行的用例步骤，因此正常执行此用例步骤即可。</p>
+<p>这里先不考虑用例断言，因为用例断言本质上也是一个用例步骤，只是通常是做一些值的对比判断，所以，为了容易理解，上述的用例步骤执行就已经包含了用例断言的概念。</p>
+<p><img alt="img" src="img/1.png" /></p>
+<p>图（一）用例步骤中重启中断后恢复执行的流程</p>
+<h3 id="_4">注册开机自启服务<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>将自动化用例执行程序注册到开机自启服务中，确保用例执行过程中，机器重启后程序能自动的被拉起执行。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">letmego</span>
+
+<span class="n">letmego</span><span class="o">.</span><span class="n">register_autostart_service</span><span class="p">(</span>
+    <span class="c1"># 系统当前运行用户的用户名</span>
+    <span class="n">user</span><span class="o">=</span><span class="s2">&quot;uos&quot;</span><span class="p">,</span>
+    <span class="c1"># 自动化程序所在的路径</span>
+    <span class="n">working_directory</span><span class="o">=</span><span class="s2">&quot;/home/uos/youqu/&quot;</span><span class="p">,</span>
+    <span class="c1"># 自动化程序的执行命令</span>
+    <span class="n">cmd</span><span class="o">=</span><span class="s2">&quot;pytest .&quot;</span>
+<span class="p">)</span>
+</code></pre></div>
+<h3 id="_5">执行判断模块<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>执行判断模块负责在每个用例步骤执行时，读取执行记录文件，如果该用例步骤所对应的标签已经存在，说明此用例步骤被执行过，则跳过执行，反之，则正常执行。</p>
+<h3 id="_6">执行记录文件<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p>执行记录文件里面记录的是已经执行过的用例步骤标签，标签采用一套组合算法，将用例步骤的函数对象转换为唯一的字符串，即使在同一条用例中多次调用了相同的用例步骤函数，其对应的标签字符串也是不同的，确保用例中的每个步骤函数的标签字符串全局唯一性。</p>
+<h3 id="_7">用例步骤函数标签字符串编码算法<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p>由于用例步骤函数是可复用的，也就是说即使是在同一条测试用例里面，可能出现多个完全相同的用例步骤函数的调用，因此我们需要有一种算法来确保每个步骤所对应的标签字符串的唯一性，而且标签字符串还应该具有可逆性，就是说当执行判断模块读取到某个标签字符串时，通过解码能快速的知道它是否为当前执行的用例步骤函数，这就是可逆性。</p>
+<p>用例步骤在执行时，通过以下 5 个关键信息进行编码组合：</p>
+<p>（1）用例代码的文件路径；</p>
+<p>（2）用例类的类名；</p>
+<p>（3）用例函数的函数名；</p>
+<p>（4）用例步骤的函数名称；</p>
+<p>（5）用例步骤函数所在文件的代码行数；</p>
+<p>根据以上 5 个关键信息，经过编码组合后就可以生成一个具有唯一性、可逆性的标签字符串。</p>
+<p>这里简单说明一下上述 5 个关键信息之间的关系：</p>
+<p>（1）一条自动化测试用例是写在某个用例文件（也可称为用例脚本文件或简称脚本文件）里的，用例文件的路径就包含了文件所在系统中的路径和文件名称。</p>
+<p>（2）基于面向对象的软件开发思想，在用例文件中，会以类的形式进行用例代码的编写，在类里面所定义的函数就是测试用例函数，而在测试用例函数里面是调用的用例步骤函数（方法）。</p>
+<p>（3）用例步骤函数所在文件的代码行数是用于区分在用例函数中，多次调用相同的用例步骤函数的情况。</p>
+<p><img alt="img" src="img/2.png" /></p>
+<p>图（二）用例步骤函数标签字符串编码算法几个关键信息的关系</p>
+<p>代码示例如下：</p>
+<p><code>test.py</code></p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">pytest</span>
+<span class="kn">from</span> <span class="nn">test.page</span> <span class="kn">import</span> <span class="n">Page</span>
+
+
+<span class="k">class</span> <span class="nc">TestDemo</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">test_001</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;test 001&quot;&quot;&quot;</span>
+
+        <span class="n">Page</span><span class="p">()</span><span class="o">.</span><span class="n">click_some_element_self</span><span class="p">()</span>
+        <span class="n">Page</span><span class="o">.</span><span class="n">click_some_element_cls</span><span class="p">()</span>
+        <span class="n">Page</span><span class="o">.</span><span class="n">click_some_element_static</span><span class="p">()</span>
+        <span class="c1"># 和 10 行相同的步骤</span>
+        <span class="n">Page</span><span class="p">()</span><span class="o">.</span><span class="n">click_some_element_self</span><span class="p">()</span>
+        <span class="c1"># 和 11 行相同的步骤</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">Page</span><span class="p">()</span>
+        <span class="n">p</span><span class="o">.</span><span class="n">click_some_element_cls</span><span class="p">()</span>
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">pytest</span><span class="o">.</span><span class="n">main</span><span class="p">()</span>
+</code></pre></div>
+<ul>
+<li>test.py 是用例文件，它在操作系统中是存在一个路径的；</li>
+<li>TestDemo 是用例类类名；</li>
+<li>test_001 是用例函数的函数名称；</li>
+<li>click_some_element_self 是用例步骤函数，它来源于 page 模块的 Page 类，而且可以看出它在第 10 行和第 14 行都有调用；</li>
+</ul>
+<h3 id="_8">用例执行状态的处理<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>以前面的描述处理单条用例执行时的逻辑；</p>
+<p>那么，多条用例之间如何进行衔接处理呢，而且还有个问题，就是前面执行过的用例，第二次执行的时候实际没有执行的内容，但用例结果是 PASS，而有可能前面的用例执行状态是 FAILED，也就是说对于用例的执行状态如何处理？</p>
+<p>这部分需要在自动化测试框架里面做逻辑处理，letmego 里面提供相应的方法，框架负责调用即可。</p>
+<p>处理逻辑如下：</p>
+<p>（1）每条用例执行结束之后，在标签记录文件里面记录用例的执行状态，这里的状态不代表用例成功或失败，而仅仅是标识此用例是否已经被执行过；</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">letmego</span>
+
+<span class="n">letmego</span><span class="o">.</span><span class="n">write_testcase_running_status</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">report</span><span class="p">)</span>
+</code></pre></div>
+<p>（2）在用例收集阶段读取标签记录文件里面，并将已经记录到文件中的用例，剔除用例集。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">letmego</span>
+
+<span class="n">letmego</span><span class="o">.</span><span class="n">read_testcase_running_status</span><span class="p">(</span><span class="n">item</span><span class="p">,</span> <span class="n">reruns</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="c1"># 返回 True 说明用例已经执行过，False 说明未被执行过；</span>
+</code></pre></div>
+<p>经过以上逻辑处理，确保第二次执行时，前面已经执行完成的用例不用再执行，直接从涉及重启步骤的那条用例开始执行，根据前面的运行流程图，重启步骤及前面的步骤直接跳过，后续步骤将正常执行。</p>
+<h2 id="_9">集成到自动化测试框架<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<p>集成到框架中需要处理一下几个事情：</p>
+<ul>
+<li>注册自启服务；</li>
+<li>处理用例集；</li>
+<li>记录执行次数</li>
+<li>记录用例的执行状态；</li>
+<li>测试报告整合；</li>
+</ul>
+<p>这里面“记录执行次数”是存在重跑机制的情况下需要处理的，而且由于重跑的次数是由框架来控制的，因此需要将框架指定的重跑次数，传递给 letmego 中，从而在每个用例步骤才能记录它们是第几次执行的；</p>
+<p>以上这些一定需要小心处理，从处理难度上讲甚至超过了 letmego 本身的实现难度，你必须对自动化测试框架每个阶段的执行逻辑了若指掌；</p>
+<p>如果你是使用的 <a href="https://github.com/linuxdeepin/deepin-autotest-framework">有趣（YouQu）</a> 那就可以放心使用，此框架已经完美集成了本技术方案；</p>
+<h2 id="_10">其他容易忽视但很重要的事项<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<ul>
+<li>用例的前置和后置要写在同一个用例文件里面；</li>
+<li>重启步骤前面的步骤，如果有对象实例化的，需要处理实例化存在异常；</li>
+<li>重启步骤最好是一个简单的reboot操作，不建议在组合步骤中间插入一个reboot；</li>
+</ul>
+<h2 id="demo">Demo<a class="headerlink" href="#demo" title="Permanent link">&para;</a></h2>
+<p>我们提供了一个 <a href="https://github.com/mikigo/letmego/tree/demo">Demo</a> ，包含了 letmego 的完整应用过程以及各关键细节的处理方法，如有问题，欢迎提交 issues~~</p>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2022-2023 mikigo. All Rights Reserved.
+    </div>
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": ".", "features": ["search.suggest", "search.highlight", "content.tabs.link"], "search": "assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.78eede0e.min.js"></script>
+      
+        <script src="/js/termynal.js"></script>
+      
+        <script src="/js/custom.js"></script>
+      
+    
+  </body>
+</html>
