@@ -250,11 +250,3 @@ def read_testcase_running_status(item, reruns=None):
                 return True
     # not executed
     return False
-
-
-if __name__ == '__main__':
-    register_autostart_service(
-        user="uos",
-        working_directory="/home/uos/youqu/",
-        cmd="pytest ."
-    )

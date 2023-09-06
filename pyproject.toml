@@ -34,5 +34,5 @@ include = [
 ]
 
 [project.urls]
-Source = "https://github.com/mikigo/letmego"
-Documentation = "https://mikigo.github.io/letmego"
+Source = "https://github.com/linuxdeepin/linuxdeepin"
+Documentation = "https://linuxdeepin.github.io/letmego"
