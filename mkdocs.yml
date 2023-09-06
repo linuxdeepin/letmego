@@ -34,8 +34,8 @@ theme:
     repo: fontawesome/brands/github
 
 # 右上角
-repo_name: mikigo/letmego
-repo_url: "https://github.com/mikigo/letmego"
+repo_name: linuxdeepin/letmego
+repo_url: "https://github.com/linuxdeepin/letmego"
 
 plugins:
 #  - termynal
