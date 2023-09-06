@@ -24,7 +24,7 @@ letmego（任我行）是一个控制 Python 函数执行的方案，目前主�
 
 ## 安装
 
-- [文档](https://mikigo.github.io/letmego/)
+- [文档](https://linuxdeepin.github.io/letmego)
 
 ## 帮助
 

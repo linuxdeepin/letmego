@@ -24,7 +24,7 @@ letmego is a solution to control the execution of Python functions. At present, 
 
 ## Documentations
 
-- [Documents](https://mikigo.github.io/letmego/)
+- [Documents](https://linuxdeepin.github.io/letmego)
 
 ## Getting help
 
