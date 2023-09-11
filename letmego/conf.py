@@ -15,6 +15,8 @@ class _Setting:
     PASSWORD = "1"
     # 第几次执行
     EXECUTION_COUNT = None
+    # DEBUG
+    DEBUG = False
 
 
 setting = _Setting()

@@ -114,7 +114,8 @@ def _trace(func):
             with open(running_man_file, "a+", encoding="utf-8") as f:
                 f.write(f"{running_man}\n")
         else:
-            return None
+            if setting.DEBUG is False:
+                return None
         return func(*args, **kwargs)
 
     return wrapped
