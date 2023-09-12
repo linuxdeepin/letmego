@@ -100,6 +100,8 @@ def _trace(func):
         )
         if case_class_name:
             case_class_name = case_class_name[0]
+        else:
+            return func(*args, **kwargs)
         running_man = (
             f"{case_filename}-{case_class_name}-{case_func_name}-{page_class_name}-{page_func_name}-{page_func_line}"
         )
@@ -198,6 +200,7 @@ def unregister_autostart_service():
     :return: None
     """
     os.system(f"cho '{setting.PASSWORD}' | sudo -S rm -rf /lib/systemd/system/{setting.PROJECT_NAME}.service")
+    os.system(f"echo '{setting.PASSWORD}' | sudo -S systemctl disable {setting.PROJECT_NAME}.service")
 
 
 def clean_running_man(copy_to=None):

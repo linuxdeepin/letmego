@@ -1,5 +1,5 @@
 #!/bin/bash
-mkdocs gh-deploy
+#mkdocs gh-deploy
 rm -rf ./site
 rm -rf ./dist
 

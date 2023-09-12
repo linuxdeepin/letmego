@@ -7,7 +7,7 @@ name = "letmego"
 authors = [
   { name="mikigo", email="huangmingqiang@uniontech.com" },
 ]
-version = "1.0.1"
+version = "1.0.3"
 description = "letmego"
 readme = "README.md"
 requires-python = ">=3.7"
