@@ -66,6 +66,8 @@ def is_static_method(klass_or_instance, attr: str):
 def _trace(func):
     @wraps(func)
     def wrapped(*args, **kwargs):
+        if setting.DEBUG is True:
+            return func(*args, **kwargs)
         try:
             if (
                     isinstance(args[0], inspect._findclass(func))
@@ -116,8 +118,7 @@ def _trace(func):
             with open(running_man_file, "a+", encoding="utf-8") as f:
                 f.write(f"{running_man}\n")
         else:
-            if setting.DEBUG is False:
-                return None
+            return None
         return func(*args, **kwargs)
 
     return wrapped
