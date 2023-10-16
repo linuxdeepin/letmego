@@ -66,8 +66,6 @@ def is_static_method(klass_or_instance, attr: str):
 def _trace(func):
     @wraps(func)
     def wrapped(*args, **kwargs):
-        if setting.DEBUG is True:
-            return func(*args, **kwargs)
         try:
             if (
                     isinstance(args[0], inspect._findclass(func))
@@ -86,6 +84,8 @@ def _trace(func):
                         args = list(args)[1:]
         except IndexError:
             pass
+        if setting.DEBUG is True:
+            return func(*args, **kwargs)
         frame = inspect.currentframe()
         case_filename = str(frame.f_back.f_code.co_filename)
         if not case_filename.split("/")[-1].startswith("test"):
